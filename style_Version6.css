@@ -1,0 +1,96 @@
+body {
+    background: radial-gradient(ellipse at top, #232946 0%, #121629 100%);
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pong-wrapper {
+    background: rgba(25,28,38, 0.96);
+    border-radius: 20px;
+    padding: 32px 28px 20px 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 970px;
+    max-width: 98vw;
+}
+
+header h1 {
+    color: #52e3c2;
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0 0 14px 0;
+    text-shadow: 0 2px 18px #000;
+}
+
+.score-container {
+    margin-bottom: 16px;
+}
+
+.score {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #e8eaed;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+#pongCanvas {
+    background: linear-gradient(135deg, #191c20 80%, #23272b 100%);
+    border: 4px solid #52e3c2;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+    display: block;
+    margin: 0 auto 18px auto;
+    width: 900px;
+    max-width: 96vw;
+    transition: box-shadow 0.2s;
+    touch-action: none; /* Prevent default scrolling on mobile */
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+}
+
+#startBtn, #pauseBtn, #musicBtn {
+    background: #52e3c2;
+    color: #232946;
+    font-size: 1.18rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px #0004;
+    margin-bottom: 4px;
+}
+#startBtn:hover:enabled, #pauseBtn:hover:enabled, #musicBtn:hover:enabled {
+    background: #38b19c;
+}
+#pauseBtn:disabled, #musicBtn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#message {
+    font-size: 1.2rem;
+    color: #eebd89;
+    margin-left: 2vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    min-width: 180px;
+}
