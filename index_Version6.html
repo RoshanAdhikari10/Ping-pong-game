@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pong-wrapper">
+        <header>
+            <h1>Pong Pro</h1>
+        </header>
+        <div class="score-container">
+            <div class="score">
+                <span id="playerScore">0</span>
+                <span>:</span>
+                <span id="aiScore">0</span>
+            </div>
+        </div>
+        <canvas id="pongCanvas" width="900" height="540"></canvas>
+        <div class="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="musicBtn" disabled>Mute Music</button>
+            <span id="message"></span>
+        </div>
+    </div>
+    <audio id="hitSound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa9f9e.mp3"></audio>
+    <audio id="scoreSound" src="https://cdn.pixabay.com/audio/2022/08/20/audio_1394b0b0e5.mp3"></audio>
+    <audio id="music" src="https://cdn.pixabay.com/audio/2022/10/16/audio_125b3ed8ba.mp3" loop></audio>
+    <script src="game.js"></script>
+</body>
+</html>
